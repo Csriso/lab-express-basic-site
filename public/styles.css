@@ -11,9 +11,25 @@ body{
     justify-items: center;
     justify-content: center;
 }
+.text-container{
+    margin: 5% 5%;
+}
 .container{
     width: 90%;
     height: 90%;
     border-radius: 25px;
-    color: white;
+    background-color: white;
+}
+.menu{
+    position: fixed;
+    top: 0;
+
+}
+.menu ul {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: space-around;
+    justify-items: center;
 }
