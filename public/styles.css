@@ -3,7 +3,6 @@ body{
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,21 +14,70 @@ body{
     margin: 5% 5%;
 }
 .container{
+    margin-top: 50px;
     width: 90%;
-    height: 90%;
     border-radius: 25px;
     background-color: white;
+    z-index: 3;
 }
 .menu{
     position: fixed;
     top: 0;
+    width:50%;
+    z-index: 0;
 
 }
 .menu ul {
     display:flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    align-content: space-around;
+    justify-content: space-evenly;
+    align-content: center;
     justify-items: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+/* HOME */
+
+#homeImg{
+    width: 300px;
+    border-radius: 15px;
+}
+.text-container {
+    font-size: 20px;
+}
+.text-container h1{
+    text-align: center;
+}
+
+/* GALLERY */
+
+.galleryImgClass{
+    width: 500px;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+/* WORKS */
+
+#works li{
+    list-style: none;
 }
