@@ -7,9 +7,6 @@ const port = 3000;
 app.use(express.static("public")); // esto indica a express donde estan ubicados los elementos estaticos como imagenes, css, etc
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
-app.get("/home", (req, res) => {
   res.sendFile(__dirname + "/views/home.html");
 });
 
